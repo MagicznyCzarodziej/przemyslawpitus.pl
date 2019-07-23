@@ -1,7 +1,12 @@
 import React, { Component } from "react"
+import GlobalStyle from '../components/GlobalStyle';
 
 export default class Portfolio extends Component {
   render() {
-    return <h1>Portfolio</h1>
+    return (
+      <>
+        <GlobalStyle/>
+      </>
+    );
   }
 }
