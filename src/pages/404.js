@@ -1,6 +1,6 @@
 import React from "react"
 
-export default class {
+class NotFoundPage extends React.Component{
   render() {
     return (
       <>
@@ -10,3 +10,5 @@ export default class {
     )
   }
 }
+
+export default NotFoundPage;
