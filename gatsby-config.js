@@ -41,6 +41,7 @@ module.exports = {
           failOnError: false
         }
       }
-    }
+    },
+    'gatsby-plugin-styled-components',
   ],
 }
