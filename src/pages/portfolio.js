@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import GlobalStyle from '../components/GlobalStyle';
 import AboutSection from '../components/AboutSection';
+import TechnologiesSection from '../components/TechnologiesSection';
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -16,6 +17,7 @@ export default class Portfolio extends Component {
       <Wrapper>
         <GlobalStyle/>
         <AboutSection/>
+        <TechnologiesSection/>
       </Wrapper>
     );
   }
