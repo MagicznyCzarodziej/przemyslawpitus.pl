@@ -1,7 +1,24 @@
-import React, { Component } from "react"
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import GlobalStyle from '../components/GlobalStyle';
+import AboutSection from '../components/AboutSection';
+import TechnologiesSection from '../components/TechnologiesSection';
+
+const Wrapper = styled.div`
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  scroll-snap-type: y proximity;
+`;
 
 export default class Portfolio extends Component {
   render() {
-    return <h1>Portfolio</h1>
+    return (
+      <Wrapper>
+        <GlobalStyle/>
+        <AboutSection/>
+        <TechnologiesSection/>
+      </Wrapper>
+    );
   }
 }
