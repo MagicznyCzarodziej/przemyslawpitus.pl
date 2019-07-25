@@ -3,24 +3,8 @@ import Helmet from 'react-helmet';
 import { Link } from 'gatsby';
 import logo from '../images/logo.svg';
 import styled from 'styled-components';
-import { createGlobalStyle, css } from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    font-family: Montserrat, sans-serif;
-    height: 100%;
-  }
-  html,
-  #___gatsby,
-  #gatsby-focus-wrapper {
-    height: 100%;
-  }
-`;
+import { css } from 'styled-components';
+import GlobalStyle from '../components/GlobalStyle';
 
 const Container = styled.div`
   min-height: 100%;
