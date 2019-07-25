@@ -4,6 +4,7 @@ import GlobalStyle from '../components/GlobalStyle';
 import AboutSection from '../components/AboutSection';
 import TechnologiesSection from '../components/TechnologiesSection';
 import ProjectSection from '../components/ProjectSection';
+import ContactSection from '../components/ContactSection';
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -109,6 +110,7 @@ export default class Portfolio extends Component {
             key={index}
           />
         })}
+        <ContactSection/>
       </Wrapper>
     );
   }
