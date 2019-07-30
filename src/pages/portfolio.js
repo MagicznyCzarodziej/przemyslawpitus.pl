@@ -10,7 +10,10 @@ const Wrapper = styled.div`
   height: 100vh;
   scroll-behavior: smooth;
   overflow-y: scroll;
-  scroll-snap-type: y proximity;
+
+  @media (min-width: 1000px) {
+    scroll-snap-type: y proximity;
+  }
 `;
 
 const projects = [
