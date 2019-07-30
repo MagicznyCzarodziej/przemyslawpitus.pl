@@ -162,9 +162,9 @@ export default class AboutSection extends Component {
             lub <StyledLink href="#contact">skontaktować</StyledLink> się ze mną.
           </p>
           <p className="info-mobile">
-            <div><StyledLink href="#technologies">&gt; technologie</StyledLink></div>
-            <div><StyledLink href="#projects">&gt; projekty</StyledLink></div>
-            <div><StyledLink href="#contact">&gt; kontakt</StyledLink></div>
+            <div><StyledLink href="#technologies">/ technologie</StyledLink></div>
+            <div><StyledLink href="#projects">/ projekty</StyledLink></div>
+            <div><StyledLink href="#contact">/ kontakt</StyledLink></div>
           </p>
         </Info>
         <GithubLink><a href="https://github.com/MagicznyCzarodziej/">Github</a></GithubLink>
