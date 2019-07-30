@@ -3,14 +3,18 @@ import styled from 'styled-components';
 import feather from '../images/feather-sprite.svg'
 
 const Wrapper = styled.div`
-  min-height: 100vh;
-  scroll-snap-align: start;
-  padding: 5rem 0 5rem 5rem;
-  font-size: 3.5rem;
+  height: 100vh;
+  padding: 2rem;
+  font-size: 2.5rem;
   background-color: #0B0D19;
   color: #EEE;
   position: relative;
   overflow: hidden;
+
+  @media (min-width: 1000px) {
+    padding: 5rem;
+    font-size: 3.5rem;
+  }
 `;
 
 const Header = styled.header`
@@ -20,15 +24,22 @@ const Header = styled.header`
 
 const StyledList = styled.ul`
   list-style-type: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-top: 5rem;
   li {
     margin-bottom: 1rem;
+    word-wrap: break-word;
+
     a {
+      word-break: normal;
       color: #EEE;
       text-decoration: none;
       border-bottom: 2px solid #EEE;
     }
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 2.5rem;
   }
 `;
 
@@ -40,19 +51,34 @@ const StyledSvg = styled.svg`
   position: absolute;
   &.github {
     stroke-width: 1.5;
-    width: 30rem;
-    height: 30rem;
-    bottom: -5rem;
-    left: -2rem;
-    transform: rotate(20deg)
+    width: 10rem;
+    height: 10rem;
+    bottom: -2rem;
+    left: -1rem;
+    transform: rotate(20deg);
+
+    @media (min-width: 1000px) {
+      width: 30rem;
+      height: 30rem;
+      bottom: -5rem;
+      left: -2rem;
+    }
   }
   &.mail {
-    stroke-width: 1;
-    width: 50rem;
-    height: 50rem;
-    bottom: -7rem;
-    right: -4rem;
-    transform: rotate(-20deg)
+    stroke-width: 1.5;
+    width: 10rem;
+    height: 10rem;
+    bottom: -2rem;
+    right: -2rem;
+    transform: rotate(-20deg);
+
+    @media (min-width: 1000px) {
+      stroke-width: 1;
+      width: 50rem;
+      height: 50rem;
+      bottom: -7rem;
+      right: -4rem;
+    }
   }
 `;
 
@@ -63,10 +89,10 @@ export default class ContactSection extends Component {
         <Header>Kontakt</Header>
         <StyledList>
           <li>
-            <b>Github:</b> <a href="http://github.com/MagicznyCzarodziej">github.com/MagicznyCzarodziej</a>            
+            <b>Github:</b> <a href="http://github.com/MagicznyCzarodziej">MagicznyCzarodziej</a>            
           </li>
           <li>
-            <b>Email:</b> pitusprzemyslaw@gmail.com
+            <b>Email:</b> pitusprzemyslaw&#8203;@gmail.com
           </li>
         </StyledList>
         <StyledSvg className="github">

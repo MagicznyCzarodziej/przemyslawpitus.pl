@@ -2,18 +2,48 @@ import React from 'react';
 import styled from 'styled-components';
 import feather from '../images/feather-sprite.svg';
 
+const Wrapper = styled.div`
+  background-color: #360434;
+  position: relative;
+  padding: 2rem;
+  color: #EEE;
+  overflow: hidden;
+
+  @media (min-width: 1000px) {
+    min-height: 100vh;
+    padding: 5rem;
+  }
+`;
+
 const TechnologiesHeader = styled.div`
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 300;
+  margin-bottom: 2rem;
+  
+  @media (min-width: 1000px) {
+    margin-bottom: 0;
+    font-size: 3.5rem;
+  }
 `;
 
 const Techs = styled.div`
   display: flex;
-  margin: 6rem 0;
-  font-size: 2.5rem;
+  flex-direction: column;
+  font-size: 2rem;
   ul {
     list-style-type: none;
-    margin-right: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: 1000px) {
+    margin: 6rem 0;
+    flex-direction: row;
+    font-size: 2.5rem;
+
+    ul {
+      margin-right: 8rem;
+      margin-bottom: 0;
+    }
   }
 `;
 
@@ -23,34 +53,33 @@ const ListHeader = styled.div`
 `;
 
 const Extra = styled.div`
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
+
+  @media (min-width: 1000px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const BackgroundImage = styled.svg`
   position: absolute;
-  bottom: -6rem;
-  right: 4rem;
-  width: 30rem;
-  height: 30rem;
+  bottom: -3rem;
+  right: 2rem;
+  width: 10rem;
+  height: 10rem;
   opacity: 0.2;
   stroke: #EEE;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
-`;
 
-const Wrapper = styled.div`
-  background-color: #360434;
-  scroll-snap-align: start;
-  display: block;
-  position: relative;
-  height: 100vh;
-  padding: 5rem;
-  scroll-snap-align: start;
-  overflow: hidden;
-  color: #EEE;
+  @media (min-width: 1000px) {
+    bottom: -6rem;  
+    right: 4rem;  
+    width: 30rem;  
+    height: 30rem;  
+  }
 `;
 
 export default class TechnologiesSection extends React.Component{
@@ -79,8 +108,8 @@ export default class TechnologiesSection extends React.Component{
             </div>
           </Techs>
           <Extra>
-            <b>Ponadto, w moich projektach wykorzystuję</b><br/>
-            ES6, REST API, <b>Git</b>, Eslint
+            <ListHeader>Ponadto, w moich projektach wykorzystuję</ListHeader>
+            ES6, REST API, Git, Eslint
           </Extra>
           <BackgroundImage>
             <use xlinkHref={`${feather}#layers`}/>
