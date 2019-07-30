@@ -5,30 +5,30 @@ import Button from '../components/Button';
 
 const Wrapper = styled.div`
   min-height: 100vh;
-  scroll-snap-align: start;
-  padding: 5rem 0 5rem 5rem;
-  font-size: 2.5rem;
+  padding: 2rem 2rem 0 2rem;
+  font-size: 2rem;
   overflow: hidden;
   color: ${({ theme }) => theme === 'dark' ? '#EEE' : '#111'};
   background-color: ${({ backgroundColor }) => backgroundColor};
-  display: flex;
   position: relative;
-`;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-const ProjectsHeader = styled.div`
-  position: absolute;
-  padding: 2rem 5rem;
-  background-color: #262626;
-  font-size: 3.5rem;
-  left: 0;
-  top: 0;
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    padding: 5rem 0 5rem 5rem;
+    font-size: 2.5rem;
+  }
 `;
 
 const ContentWrapper = styled.div`
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @media (min-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+  }
 `;
 
 const Header = styled.header`
@@ -42,15 +42,33 @@ const Description = styled.p`
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 `;
 
+const StyledButton = styled(Button)`
+  margin-bottom: 1rem;
+  display: block;
+  @media (min-width: 1000px) {
+    display: initial;
+    margin-bottom: 0;
+  }
+`;
+
 const Image = styled.div`
-  position: absolute;
-  width: 100%;
-  top: 10rem;
-  bottom: 10rem;
-  left: calc(60% + 5rem);
   background: url(${props => props.image});
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 10rem;
+  width: 100%;
+  margin-top: 2rem;
+
+  @media (min-width: 1000px) {
+    position: absolute;
+    margin-top: 0;
+    background-size: contain;
+    width: 100%;
+    height: initial;
+    top: 10rem;
+    bottom: 10rem;
+    left: calc(60% + 5rem);
+  }
 `;
 
 export default class ProjectSection extends Component {
@@ -62,7 +80,6 @@ export default class ProjectSection extends Component {
         theme={theme}
         backgroundColor={backgroundColor}
       >
-        {this.props.firstProject && <ProjectsHeader>Wybrane projekty</ProjectsHeader>}
         <ContentWrapper>
           <Header>
             {name}
@@ -73,14 +90,15 @@ export default class ProjectSection extends Component {
           <div>
             {buttons.map((value, index) => {
               const { label, icon, link } = value;
-              return <Button
+              return <StyledButton
                   key={index}
                   link={link}
                   icon={icon}
                   dark={theme === 'light'}
+                  className="styled"
                 >
                   {label}
-                </Button>
+                </StyledButton>
             })}
           </div>
         </ContentWrapper>  

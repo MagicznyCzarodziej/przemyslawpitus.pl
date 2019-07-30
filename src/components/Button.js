@@ -37,9 +37,9 @@ const Text = styled.span`
 
 export default class Button extends Component {
   render() {
-    const { link, dark, icon, children } = this.props;
+    const { link, dark, icon, children, className } = this.props;
     return (
-      <StyledLink href={link} dark={dark}>
+      <StyledLink className={className} href={link} dark={dark}>
         <StyledSvg dark={dark}>
           <use xlinkHref={`${feather}#${icon}`}/>
         </StyledSvg>
@@ -54,4 +54,5 @@ Button.propTypes = {
   icon: PropTypes.string,
   children: PropTypes.string,
   dark: PropTypes.bool,
+  className: PropTypes.string,
 };
