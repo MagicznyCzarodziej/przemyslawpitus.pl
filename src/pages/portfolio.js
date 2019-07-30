@@ -8,11 +8,20 @@ import ContactSection from '../components/ContactSection';
 
 const Wrapper = styled.div`
   height: 100vh;
-  scroll-behavior: smooth;
-  overflow-y: scroll;
 
   @media (min-width: 1000px) {
-    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+  }
+`;
+
+const ProjectsHeader = styled.div`
+  padding: 2rem;
+  background-color: #111;
+  font-size: 2rem;
+  color: #EEE;
+  @media (min-width: 1000px) {
+    padding: 2rem 5rem;
+    font-size: 3rem;
   }
 `;
 
@@ -106,9 +115,10 @@ export default class Portfolio extends Component {
         <GlobalStyle/>
         <AboutSection/>
         <TechnologiesSection/>
+        <ProjectsHeader id="projects">Wybrane projekty</ProjectsHeader>
         {projects.map((project, index) => {
           return <ProjectSection
-            {...(index === 0 ? {id: 'projects', firstProject: true} : {})}
+            // {...(index === 0 ? {id: 'projects', firstProject: true} : {})}
             project={project}
             key={index}
           />

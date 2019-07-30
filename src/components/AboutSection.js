@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import feather from '../images/feather-sprite.svg';
 
 const Wrapper = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   padding: 2rem;
   background-color: #0B0D19;
   display: flex;
@@ -21,10 +21,7 @@ const Wrapper = styled.div`
     display: inline;
   }
 
-  @media (min-width: 1000px) {
-    padding: 5rem;
-    overflow: hidden;
-
+  @media (min-width: 1150px) {
     .widescreen-break {
       display: initial;
     }
@@ -32,6 +29,10 @@ const Wrapper = styled.div`
     .rwd-line {
       display: block;
     }
+  }
+
+  @media (min-width: 1000px) {
+    padding: 5rem;
   }
 `;
 
@@ -41,7 +42,6 @@ const Header = styled.header`
   @media (min-width: 1000px) {
     display: flex;
     justify-content: space-between;
-
   }
 `;
 
@@ -95,10 +95,6 @@ const Info = styled.div`
 
 const Bold = styled.span`
   font-weight: 400;
-
-  @media (min-width: 1000px) {
-  
-  }
 `;
 
 const GithubLink = styled.div`
@@ -139,6 +135,7 @@ const StyledLink = styled.a`
   color: #EEE;
   font-weight: 300;
   text-decoration: none;
+  white-space: nowrap;
 
   @media (min-width: 1000px) {
     border-bottom: 2px solid #EEE;

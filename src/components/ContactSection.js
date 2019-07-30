@@ -4,7 +4,6 @@ import feather from '../images/feather-sprite.svg'
 
 const Wrapper = styled.div`
   height: 100vh;
-  scroll-snap-align: start;
   padding: 2rem;
   font-size: 2.5rem;
   background-color: #0B0D19;

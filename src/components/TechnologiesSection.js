@@ -4,15 +4,14 @@ import feather from '../images/feather-sprite.svg';
 
 const Wrapper = styled.div`
   background-color: #360434;
-  scroll-snap-align: start;
   position: relative;
   padding: 2rem;
   color: #EEE;
+  overflow: hidden;
 
   @media (min-width: 1000px) {
-    height: 100vh;
+    min-height: 100vh;
     padding: 5rem;
-    overflow: hidden;
   }
 `;
 
