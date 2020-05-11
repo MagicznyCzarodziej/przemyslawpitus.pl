@@ -27,6 +27,20 @@ const ProjectsHeader = styled.div`
 
 const projects = [
   {
+    name: 'RolkaBot',
+    description: <>
+      Bot do Discorda umożliwiający szybkie i wygodne rzucanie kośćmi do gier RPG<br/><br/>
+      
+      Napisany przy użyciu <b>Typescript</b>, hostowany 24/7 na <b>Heroku</b>
+    </>,
+    image: 'rolkabot.png',
+    buttons: [
+      { label: 'Github', icon: 'github', link: 'https://github.com/MagicznyCzarodziej/RolkaBot'},
+    ],
+    theme: 'dark',
+    backgroundColor: '#36393F',
+  },
+  {
     name: 'Feastly',
     description: <>
       Zbieracz feedów RSS.<br/>
