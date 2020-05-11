@@ -109,7 +109,7 @@ export default class TechnologiesSection extends React.Component{
           </Techs>
           <Extra>
             <ListHeader>Ponadto, w moich projektach wykorzystuję</ListHeader>
-            ES6, REST API, Git, Eslint
+            ES6, Typescript, REST API, Git, Eslint
           </Extra>
           <BackgroundImage>
             <use xlinkHref={`${feather}#layers`}/>
