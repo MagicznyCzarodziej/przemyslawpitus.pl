@@ -105,6 +105,20 @@ const projects = [
     backgroundColor: '#1AB698',
   },
   {
+    name: 'Transart',
+    description: <>
+      Prosta wizytówka firmowa dla klienta<br/><br/>
+      
+      Czysty HTML + CSS. Dodatkowo Jocms umożliwiający klientowi edycję treści bez modyfikacji kodu strony
+    </>,
+    image: 'transart.png',
+    buttons: [
+      { label: 'Demo', icon: 'external-link', link: 'http://transartchelm.pl/' },
+    ],
+    theme: 'light',
+    backgroundColor: '#EEE',
+  },
+  {
     name: 'Next Launch',
     description: <>
       Prosta strona pokazująca najbliższe starty rakiet, korzystając z LaunchLibrary API.<br/><br/>
