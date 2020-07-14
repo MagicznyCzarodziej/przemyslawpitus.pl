@@ -104,7 +104,7 @@ export default class ProjectSection extends Component {
             })}
           </div>
         </ContentWrapper>  
-        <Image image={require(`../images/${image}`)}></Image>
+        {image && <Image image={require(`../images/${image}`)}></Image>}
       </Wrapper>
     )
   }
