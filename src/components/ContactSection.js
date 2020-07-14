@@ -24,7 +24,7 @@ const Header = styled.header`
 
 const StyledList = styled.ul`
   list-style-type: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 5rem;
   li {
     margin-bottom: 1rem;

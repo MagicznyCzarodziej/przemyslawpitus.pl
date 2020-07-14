@@ -6,7 +6,7 @@ import Button from '../components/Button';
 const Wrapper = styled.div`
   min-height: 100vh;
   padding: 2rem 2rem 0 2rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   overflow: hidden;
   color: ${({ theme }) => theme === 'dark' ? '#EEE' : '#111'};
   background-color: ${({ backgroundColor }) => backgroundColor};
@@ -45,7 +45,9 @@ const Description = styled.p`
 const StyledButton = styled(Button)`
   margin-bottom: 1rem;
   display: block;
+  font-size: 1.5rem;
   @media (min-width: 1000px) {
+    font-size: 2rem;
     display: initial;
     margin-bottom: 0;
   }

@@ -29,7 +29,7 @@ const TechnologiesHeader = styled.div`
 const Techs = styled.div`
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 1.5rem;
   ul {
     list-style-type: none;
     margin-bottom: 1rem;
@@ -38,7 +38,7 @@ const Techs = styled.div`
   @media (min-width: 1000px) {
     margin: 6rem 0;
     flex-direction: row;
-    font-size: 2.5rem;
+    font-size: 2rem;
 
     ul {
       margin-right: 8rem;
@@ -53,11 +53,11 @@ const ListHeader = styled.div`
 `;
 
 const Extra = styled.div`
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
 
   @media (min-width: 1000px) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 `;
 
