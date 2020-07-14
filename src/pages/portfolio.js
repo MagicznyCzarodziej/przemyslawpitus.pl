@@ -119,6 +119,22 @@ const projects = [
     backgroundColor: '#EEE',
   },
   {
+    name: 'EvenTable',
+    description: <>
+      Responsywna aplikacja do zarządzania wydarzeniami<br/><br/>
+      
+      Czysty HTML + CSS + JS. Dane przechowywane w localStorage.
+      Strona powstała na zaliczenie przedmiotu na uczelni.
+    </>,
+    image: 'eventable.png',
+    buttons: [
+      { label: 'Demo', icon: 'external-link', link: 'https://eventable.netlify.app/' },
+      { label: 'Github', icon: 'github', link: 'https://github.com/MagicznyCzarodziej/EvenTable' },
+    ],
+    theme: 'dark',
+    backgroundColor: '#324754',
+  },
+  {
     name: 'Next Launch',
     description: <>
       Prosta strona pokazująca najbliższe starty rakiet, korzystając z LaunchLibrary API.<br/><br/>
