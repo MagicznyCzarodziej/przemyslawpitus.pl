@@ -154,18 +154,18 @@ export default class AboutSection extends Component {
           </Profession>
         </Header>
         <Info>
-          <p className="info-desktop">
+          <div className="info-desktop">
             <Bold>Cześć!</Bold><br/>
             Wiesz już jak się nazywam, teraz możesz<br/>
             sprawdzić z jakich <StyledLink href="#technologies">technologii</StyledLink> korzystam,<br/>
             zobaczyć moje <StyledLink href="#projects">projekty</StyledLink><br/>
             lub <StyledLink href="#contact">skontaktować</StyledLink> się ze mną.
-          </p>
-          <p className="info-mobile">
+          </div>
+          <div className="info-mobile">
             <div><StyledLink href="#technologies">/ technologie</StyledLink></div>
             <div><StyledLink href="#projects">/ projekty</StyledLink></div>
             <div><StyledLink href="#contact">/ kontakt</StyledLink></div>
-          </p>
+          </div>
         </Info>
         <GithubLink><a href="https://github.com/MagicznyCzarodziej/">Github</a></GithubLink>
         <a href="#technologies">
