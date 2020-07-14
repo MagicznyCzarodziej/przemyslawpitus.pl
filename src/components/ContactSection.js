@@ -4,6 +4,7 @@ import feather from '../images/feather-sprite.svg'
 
 const Wrapper = styled.div`
   height: 100vh;
+  min-height: 30rem;
   padding: 2rem;
   font-size: 2.5rem;
   background-color: #0B0D19;
@@ -26,6 +27,8 @@ const StyledList = styled.ul`
   list-style-type: none;
   font-size: 1.5rem;
   margin-top: 5rem;
+  position: relative;
+  z-index: 1;
   li {
     margin-bottom: 1rem;
     word-wrap: break-word;
@@ -58,8 +61,8 @@ const StyledSvg = styled.svg`
     transform: rotate(20deg);
 
     @media (min-width: 1000px) {
-      width: 30rem;
-      height: 30rem;
+      width: 25rem;
+      height: 25rem;
       bottom: -5rem;
       left: -2rem;
     }
@@ -74,8 +77,8 @@ const StyledSvg = styled.svg`
 
     @media (min-width: 1000px) {
       stroke-width: 1;
-      width: 50rem;
-      height: 50rem;
+      width: 45rem;
+      height: 45rem;
       bottom: -7rem;
       right: -4rem;
     }
