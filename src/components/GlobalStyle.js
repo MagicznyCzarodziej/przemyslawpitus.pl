@@ -15,4 +15,7 @@ export default createGlobalStyle`
   #gatsby-focus-wrapper {
     height: 100%;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 `;

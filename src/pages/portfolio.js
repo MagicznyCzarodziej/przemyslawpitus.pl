@@ -75,6 +75,20 @@ const projects = [
     backgroundColor: '#EEE',
   },
   {
+    name: 'przemyslawpitus.pl',
+    description: <>
+      Osobista strona z portfolio, które właśnie przegladasz.<br/><br/>
+
+      React + <b>Gatsby</b> + <b>Styled Components</b>
+    </>,
+    image: 'przemyslawpitus.png',
+    buttons: [
+      { label: 'Github', icon: 'github', link: 'https://github.com/MagicznyCzarodziej/przemyslawpitus.pl'},
+    ],
+    theme: 'dark',
+    backgroundColor: '#1A1E2A',
+  },
+  {
     name: 'Memedex',
     description: <>
       Wyszukiwarka obrazków na podstawie tagów.
@@ -117,6 +131,22 @@ const projects = [
     ],
     theme: 'light',
     backgroundColor: '#EEE',
+  },
+  {
+    name: 'EvenTable',
+    description: <>
+      Responsywna aplikacja do zarządzania wydarzeniami<br/><br/>
+      
+      Czysty HTML + CSS + JS. Dane przechowywane w localStorage.
+      Strona powstała na zaliczenie przedmiotu na uczelni.
+    </>,
+    image: 'eventable.png',
+    buttons: [
+      { label: 'Demo', icon: 'external-link', link: 'https://eventable.netlify.app/' },
+      { label: 'Github', icon: 'github', link: 'https://github.com/MagicznyCzarodziej/EvenTable' },
+    ],
+    theme: 'dark',
+    backgroundColor: '#324754',
   },
   {
     name: 'Next Launch',

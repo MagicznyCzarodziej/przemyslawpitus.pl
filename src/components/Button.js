@@ -6,8 +6,6 @@ import feather from '../images/feather-sprite.svg';
 const StyledLink = styled.a`
   border: 2px solid ${ props => props.dark ? '#111' : '#EEE' };
   padding: 0.5rem 1rem;
-  display: inline-block;
-  align-items: center;
   text-decoration: none;
   margin-right: 2rem;
   color: ${ props => props.dark ? '#111' : '#EEE' };
@@ -18,14 +16,16 @@ const StyledLink = styled.a`
 `;
 
 const StyledSvg = styled.svg`
-  width: 2rem;
-  height: 2rem;
+  width: 1em;
+  height: 1em;
   stroke: ${ props => props.dark ? '#111' : '#EEE' };
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none;
-  margin-right: 1rem;
+  margin-right: 0.5em;
+  position: relative;
+  top: 0.15em;
   ${StyledLink}:hover & {
     stroke: ${ props => props.dark ? '#EEE' : '#111' };
   }
