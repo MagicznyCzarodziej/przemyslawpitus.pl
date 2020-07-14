@@ -75,6 +75,20 @@ const projects = [
     backgroundColor: '#EEE',
   },
   {
+    name: 'przemyslawpitus.pl',
+    description: <>
+      Osobista strona z portfolio, które właśnie przegladasz.<br/><br/>
+
+      React + <b>Gatsby</b> + <b>Styled Components</b>
+    </>,
+    image: 'przemyslawpitus.png',
+    buttons: [
+      { label: 'Github', icon: 'github', link: 'https://github.com/MagicznyCzarodziej/przemyslawpitus.pl'},
+    ],
+    theme: 'dark',
+    backgroundColor: '#1A1E2A',
+  },
+  {
     name: 'Memedex',
     description: <>
       Wyszukiwarka obrazków na podstawie tagów.
