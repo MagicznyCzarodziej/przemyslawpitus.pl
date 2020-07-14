@@ -101,9 +101,9 @@ export default class TechnologiesSection extends React.Component{
             <div>
               <ListHeader>Frontend</ListHeader>
               <ul>
-                <li>HTML5 + Stylus</li>
+                <li>HTML5 + Stylus / Sass</li>
                 <li>Vue.js + Vuex</li>
-                <li>React + Styled Components</li>
+                <li>React + Styled Components / CSS Modules</li>
               </ul>
             </div>
           </Techs>
