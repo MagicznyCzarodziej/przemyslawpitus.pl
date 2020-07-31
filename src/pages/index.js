@@ -135,7 +135,7 @@ const IndexPage = () => (
           <span><StyledA href="https://github.com/MagicznyCzarodziej">Github</StyledA></span>
         </StyledLi>
         <StyledLi>
-          <span><StyledA href="http://mamyszpie.ga">Mamy Szpiega</StyledA></span>
+          <span><StyledA href="https://mamyszpiega.przemyslawpitus.pl/">Mamy Szpiega</StyledA></span>
         </StyledLi>
         <StyledLi>
           <span><StyledLink to="/portfolio">Portfolio</StyledLink></span>

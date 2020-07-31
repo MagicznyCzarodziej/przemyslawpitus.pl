@@ -68,7 +68,7 @@ const projects = [
     </>,
     image: 'mamyszpiega.png',
     buttons: [
-      { label: 'Demo', icon: 'external-link', link: 'http://mamyszpie.ga'},
+      { label: 'Demo', icon: 'external-link', link: 'https://mamyszpiega.przemyslawpitus.pl/'},
       { label: 'Github', icon: 'github', link: 'https://github.com/MagicznyCzarodziej/spyfall'},
     ],
     theme: 'light',
